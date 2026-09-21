@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Add a post — Zara</title>
+  <link rel="stylesheet" href="assets/editor.css">
+  <link rel="stylesheet" href="assets/posts.css">
+  <script src="content/posts.js" defer></script>
+  <script src="assets/posts.js" defer></script>
+  <script src="assets/github.js" defer></script>
+  <script src="assets/editor.js" defer></script>
+</head>
+<body>
+  <header class="editor-header"><a href="index.html" class="brand">zara <span>/ editor</span></a><a href="index.html">View website ↗</a></header>
+  <main class="editor-layout">
+    <aside>
+      <h1>Posts</h1>
+      <button id="new-post" class="primary">+ New post</button>
+      <h2>Drafts on this browser</h2><div id="draft-list" class="post-list"></div>
+      <h2>Published</h2><div id="published-list" class="post-list"></div>
+      <p class="aside-note">Drafts stay on this browser. Published posts are visible to everyone.</p>
+      <details class="connection" id="connection-panel">
+        <summary>Publishing access</summary>
+        <p id="connection-status" role="status">Not connected to GitHub.</p>
+        <p>Only someone with write access to your repository can publish.</p>
+        <label for="github-token">GitHub access token</label>
+        <input id="github-token" type="password" autocomplete="off" spellcheck="false" placeholder="Paste your token here">
+        <button id="connect">Connect GitHub</button><button id="disconnect" hidden>Disconnect</button>
+        <p>Your token is kept only in this tab’s memory and is cleared when you refresh or disconnect.</p>
+        <details><summary>First-time setup</summary><ol><li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub’s token settings</a>.</li><li>Select only <strong>zgrigoryan.github.io</strong> under repository access.</li><li>Set repository <strong>Contents</strong> permission to <strong>Read and write</strong>, choose an expiry, and generate the token.</li><li>Paste it above. You’ll need it again after refreshing this editor.</li></ol><p>The website files must be uploaded to your repository and GitHub Pages enabled before posts can appear online.</p></details>
+      </details>
+    </aside>
+    <section class="workspace" aria-label="Post editor">
+      <div class="workspace-top"><span class="eyebrow" id="editing-label">New post</span><span id="save-status" role="status">Not saved yet</span></div>
+      <fieldset id="post-fields">
+        <label for="post-title" class="sr-only">Post title</label><input id="post-title" class="title-input" maxlength="180" placeholder="Post title" required>
+        <div class="post-settings"><label for="post-category">Category</label><select id="post-category"><option value="art">Art &amp; sketches</option><option value="yoga">Yoga</option><option value="photography">Photography</option><option value="books">Books</option><option value="films">Films</option><option value="writing">Writing</option></select></div>
+        <div id="blocks"></div>
+        <div class="add-blocks" role="group" aria-label="Add content"><button id="add-text">+ Text</button><button id="add-media">+ Photo / video</button><button id="add-embed">+ Video link</button><input id="media-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif,image/avif,video/mp4,video/webm" multiple hidden></div>
+        <p class="media-help">Combine text and media in any order. Upload JPG, PNG, WebP, GIF, AVIF, MP4, or WebM, up to 20 MB each. For longer videos, add a YouTube or Vimeo link.</p>
+      </fieldset>
+      <div class="editor-actions"><button id="save-draft">Save draft</button><button id="preview-post">Preview</button><button id="publish-post" class="primary">Publish</button></div>
+      <p id="editor-status" role="status" aria-live="polite"></p>
+      <a id="commit-link" target="_blank" rel="noopener noreferrer" hidden>View saved version on GitHub ↗</a>
+    </section>
+  </main>
+  <dialog id="preview-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Close preview">×</button><span class="eyebrow">Preview · not published</span><div id="preview-content" class="post-preview"></div></dialog>
+  <noscript>This editor needs JavaScript enabled to save drafts and publish posts.</noscript>
+</body>
+</html>

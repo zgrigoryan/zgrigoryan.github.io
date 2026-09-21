@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0A3323">
-  <meta name="description" content="Zara’s: a personal collection of art, movement, photographs, books, films, and words.">
-  <title>Zara — a collection of me</title>
+  <meta name="description" content="Art, photography, yoga, writing, and reviews by Zara.">
+  <title>Zara | Art, photographs &amp; notes</title>
+  <link rel="stylesheet" href="assets/posts.css">
   <style>
     :root { --ink:#0A3323; --sage:#839958; --paper:#F7F4D5; --rose:#D3968C; --blue:#105666; --line:rgba(10,51,35,.23); --serif:Georgia,'Times New Roman',serif; }
     :root[data-palette="ochre"] { --ink:#7F3B25; --sage:#A7993C; --paper:#DCCD8B; --rose:#B57056; --blue:#475480; --line:rgba(127,59,37,.28); }
@@ -114,9 +115,9 @@
   <a class="skip" href="#main">Skip to content</a>
   <header>
     <div class="wrap header-inner">
-      <a class="brand" href="#" aria-label="Zara’s home"><span aria-hidden="true">✳</span> zara’s little corner</a>
+      <a class="brand" href="#" aria-label="Zara’s home"><span aria-hidden="true">✳</span> zara</a>
       <nav aria-label="Main navigation">
-        <a href="#collection">The collection</a><a href="#about">A little about me</a>
+        <a href="#collection">The collection</a><a href="#about">About</a>
         <button class="palette" id="palette-toggle" aria-label="Use the ochre color palette" aria-pressed="false" hidden><span class="swatches" aria-hidden="true"><i></i><i></i><i></i></span><span>Change palette</span></button>
       </nav>
     </div>
@@ -125,10 +126,10 @@
     <div class="wrap">
       <section class="hero" aria-labelledby="intro-title">
         <div>
-          <p class="eyebrow hello">A personal scrapbook, always growing</p>
-          <h1 id="intro-title">A little<br>collection<br>of <em>me.</em></h1>
-          <p class="intro">Art I make. Places I notice. Stories I keep.<br>I’m Zara, and this is a home for the things that make up my world.</p>
-          <a class="text-link" href="#collection">Come have a look around <span aria-hidden="true">↘</span></a>
+          <p class="eyebrow hello">Art, photographs &amp; notes</p>
+          <h1 id="intro-title">Zara.<br><em>Work &amp;<br>interests.</em></h1>
+          <p class="intro">My art, photography, and yoga practice, alongside notes on books and films.</p>
+          <a class="text-link" href="#collection">Browse <span aria-hidden="true">↘</span></a>
         </div>
         <div class="collage" role="img" aria-label="A moodboard of sample illustrations: layered mountains and a botanical drawing on dusty pink paper.">
           <div class="landscape-print"><span class="tape"></span>
@@ -137,80 +138,81 @@
               <path d="M-10 216 141 41 256 207 308 117 380 220V290H-10Z" fill="#82958a"/><path d="m141 41-46 55 27-8 15 11 18-17 29 20Z" fill="#efedd5"/>
               <path d="M-10 206 74 161 126 190 230 137 380 229V290H-10Z" fill="#839958"/><path d="M-10 230Q104 174 203 239T380 228V290H-10Z" fill="#3a6547"/><path d="M-10 266Q140 212 232 271T380 251V290H-10Z" fill="#0a3323"/><path d="M148 290q75-40 36-62t28-41" stroke="#d9c995" stroke-width="6" fill="none"/>
             </svg>
-            <small>earth &amp; sky · sample illustration</small>
+            <small>Sample illustration</small>
           </div>
           <div class="botanical"><svg viewBox="0 0 180 210" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M78 199q34-73 21-173M94 121Q46 91 33 51q61 5 63 66M102 93q55-21 52-59-52 5-52 53M92 151q-59 0-64-40 47-9 65 35M83 177q54 5 70-35-48-17-66 24M99 51Q74 33 88 9q24 10 11 42"/><path d="m36 55 58 62m60-80-51 52m-70 25 59 33m55-2-60 24" opacity=".6"/></svg></div>
-          <span class="little-star" aria-hidden="true">✷</span><span class="collage-note">a few things, close to my heart ↗</span>
+          <span class="little-star" aria-hidden="true">✷</span><span class="collage-note">Art &amp; photography</span>
         </div>
       </section>
-      <div class="ribbon"><span>made of curiosity</span><span aria-hidden="true">✳</span><span>a little stillness</span><span aria-hidden="true">✳</span><span>a sense of wonder</span><span aria-hidden="true">✳</span></div>
+      <div class="ribbon"><span>Art &amp; photography</span><span aria-hidden="true">✳</span><span>Yoga</span><span aria-hidden="true">✳</span><span>Books, films &amp; writing</span><span aria-hidden="true">✳</span></div>
       <section class="collection" id="collection" aria-labelledby="collection-title">
-        <div class="section-heading"><div><span class="eyebrow">Things made, found &amp; felt</span><h2 id="collection-title">The collection</h2></div><p>A scrapbook. Not quite in order. Just like me.</p></div>
+        <div class="section-heading"><div><span class="eyebrow">Browse by subject</span><h2 id="collection-title">The collection</h2></div><a class="add-post" href="editor.html">+ Add post</a></div>
         <div class="filters" role="group" aria-label="Filter the collection" hidden>
-          <button class="filter" data-filter="all" aria-pressed="true">Everything</button><button class="filter" data-filter="art" aria-pressed="false">Art &amp; sketches</button><button class="filter" data-filter="yoga" aria-pressed="false">Yoga</button><button class="filter" data-filter="photography" aria-pressed="false">Through my lens</button><button class="filter" data-filter="books" aria-pressed="false">Books</button><button class="filter" data-filter="films" aria-pressed="false">Films</button><button class="filter" data-filter="writing" aria-pressed="false">Words</button>
+          <button class="filter" data-filter="all" aria-pressed="true">Everything</button><button class="filter" data-filter="art" aria-pressed="false">Art &amp; sketches</button><button class="filter" data-filter="yoga" aria-pressed="false">Yoga</button><button class="filter" data-filter="photography" aria-pressed="false">Photography</button><button class="filter" data-filter="books" aria-pressed="false">Books</button><button class="filter" data-filter="films" aria-pressed="false">Films</button><button class="filter" data-filter="writing" aria-pressed="false">Writing</button>
         </div>
-        <p class="starter-note">The first pages are waiting to be filled. Illustrations and entries below are placeholders for my own collection.</p>
+        <p class="starter-note">Draft site. The illustrations and entries below are placeholders.</p>
         <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
         <noscript><p>Browse all six collections below. Enable JavaScript to filter them and open entry previews.</p></noscript>
         <div class="grid">
-          <!-- Replace the sample visuals and text with your own work. Full entries are in the templates below. -->
           <article class="entry" data-category="art">
-            <button class="card-open" data-entry="entry-art" aria-haspopup="dialog" aria-label="Open From the sketchbook">
+            <button class="card-open" data-entry="entry-art" aria-haspopup="dialog" aria-label="Open Art &amp; sketches">
               <div class="visual art"><svg viewBox="0 0 300 270" aria-hidden="true"><rect x="20" y="8" width="260" height="250" fill="#f8f1db" transform="rotate(-4 150 135)"/><g fill="none" stroke="#665c43" stroke-width="1.4" transform="rotate(-4 150 135)"><path d="M137 236q-10-73 13-147M145 163q-66-5-59-67 48 10 59 67Zm-1-19q51-7 59-66-53 4-59 66Zm1-24q-41-4-39-48 39 5 39 48Zm5-29q40-10 33-49-38 8-33 49Zm-12 108q-54 3-57-37 47-5 57 37Zm1-20q47 13 60-26-44-16-60 26Z"/><path d="m87 98 55 64m59-80-55 59m-38-67 37 41m35-70-29 44m-68 75 53 33m58-40-53 20" opacity=".5"/><ellipse cx="140" cy="235" rx="58" ry="5" opacity=".3"/></g></svg><span class="sample-label">Sample illustration</span></div>
-              <div class="entry-meta"><span>01 / Art &amp; sketches</span><span aria-hidden="true">↗</span></div><h3>From the sketchbook</h3><p>Paint, pencil, and the pleasure of making.</p>
+              <div class="entry-meta"><span>01 / Art &amp; sketches</span><span aria-hidden="true">↗</span></div><h3>Art &amp; sketches</h3><p>Paintings, drawings, and work in progress.</p>
             </button>
           </article>
           <article class="entry" data-category="yoga">
-            <button class="card-open" data-entry="entry-yoga" aria-haspopup="dialog" aria-label="Open Room to breathe">
+            <button class="card-open" data-entry="entry-yoga" aria-haspopup="dialog" aria-label="Open Yoga">
               <div class="visual yoga"><svg viewBox="0 0 350 275" aria-hidden="true"><path d="M89 237V107a86 86 0 0 1 172 0v130" fill="#e6dfb0"/><circle cx="213" cy="89" r="27" fill="#d3968c"/><path d="M0 235h350v40H0" fill="#647e4a"/><ellipse cx="176" cy="240" rx="102" ry="9" fill="#0a332333"/><g fill="none" stroke="#0a3323" stroke-linecap="round" stroke-linejoin="round"><circle cx="170" cy="126" r="16" stroke-width="3"/><path d="M163 146q-21 25-13 52m27-52q24 25 14 52M151 158l-25 32-36 13m97-45 24 32 34 13M149 198q-51-4-43 19 22 20 69 1 47 19 69-1 8-23-54-19m-41 1 37 14m4-15-29 16" stroke-width="4"/></g><path d="M31 229v-73m0 38q-26-6-19-29 23 1 19 29m0 20q27-9 28-31-27 0-28 31" fill="#0a3323"/></svg><span class="sample-label">Sample illustration</span></div>
-              <div class="entry-meta"><span>02 / Yoga &amp; movement</span><span aria-hidden="true">↗</span></div><h3>Room to breathe</h3><p>A place for practice, presence, and small pauses.</p>
+              <div class="entry-meta"><span>02 / Yoga &amp; movement</span><span aria-hidden="true">↗</span></div><h3>Yoga</h3><p>Photos and videos from my practice.</p>
             </button>
           </article>
           <article class="entry" data-category="photography">
-            <button class="card-open" data-entry="entry-photography" aria-haspopup="dialog" aria-label="Open The things I notice">
+            <button class="card-open" data-entry="entry-photography" aria-haspopup="dialog" aria-label="Open Photography">
               <div class="visual photo"><svg viewBox="0 0 350 275" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="350" height="275" fill="#c7cdb8"/><circle cx="270" cy="60" r="31" fill="#f7efcf"/><path d="m-20 204 143-159 74 113 66-71 106 123v80H-20" fill="#718e81"/><path d="m123 45-27 30 19-3 11 11 9-13 14 15Z" fill="#ede9d1"/><path d="M0 219q104-91 191-12t159-15v90H0" fill="#839958"/><path d="M0 245q190-35 350-6v40H0" fill="#3c6043"/><g fill="#b57056" stroke="#7f3b25" stroke-width="1.5"><path d="M156 230v-65h65v65Z"/><path d="m148 165 40-35 41 35Z"/><path d="M176 141v-30h24v30Z"/><path d="m171 111 17-35 17 35Z"/></g><path d="M181 230v-22a8 8 0 0 1 16 0v22" fill="#573d2b"/><path d="M187 124v9M169 185v10m41-10v10" stroke="#573d2b" stroke-width="5"/><path d="m188 75 0-14m-6 5h12" stroke="#573d2b" stroke-width="2"/><path d="M178 275q-4-30 11-45" stroke="#d8c194" stroke-width="14" fill="none"/></svg><span class="sample-label">Sample illustration</span></div>
-              <div class="entry-meta"><span>03 / Nature &amp; Armenian heritage</span><span aria-hidden="true">↗</span></div><h3>The things I notice</h3><p>Landscapes, little details, and traces of heritage.</p>
+              <div class="entry-meta"><span>03 / Nature &amp; Armenian heritage</span><span aria-hidden="true">↗</span></div><h3>Photography</h3><p>Nature and Armenian heritage.</p>
             </button>
           </article>
           <article class="entry" data-category="books">
-            <button class="card-open" data-entry="entry-books" aria-haspopup="dialog" aria-label="Open Between the pages">
-              <div class="visual books"><div class="book" aria-hidden="true"><small>Notes in the margins</small><span>one<br>more<br>page.</span><i>✳</i></div><span class="sample-label">Sample illustration</span></div>
-              <div class="entry-meta"><span>04 / The bookshelf</span><span aria-hidden="true">↗</span></div><h3>Between the pages</h3><p>Books I’ve read, and thoughts they leave behind.</p>
+            <button class="card-open" data-entry="entry-books" aria-haspopup="dialog" aria-label="Open Books">
+              <div class="visual books"><div class="book" aria-hidden="true"><small>Reading notes</small><span>Books<br>&amp; notes</span><i>✳</i></div><span class="sample-label">Sample illustration</span></div>
+              <div class="entry-meta"><span>04 / The bookshelf</span><span aria-hidden="true">↗</span></div><h3>Books</h3><p>What I’ve read and what I thought.</p>
             </button>
           </article>
           <article class="entry" data-category="films">
-            <button class="card-open" data-entry="entry-films" aria-haspopup="dialog" aria-label="Open After the credits">
-              <div class="visual films"><div class="film-frame" aria-hidden="true"><i>✳</i><span>one more<br>scene.</span></div><span class="sample-label">Sample illustration</span></div>
-              <div class="entry-meta"><span>05 / The film diary</span><span aria-hidden="true">↗</span></div><h3>After the credits</h3><p>Watched, want to watch, and worth talking about.</p>
+            <button class="card-open" data-entry="entry-films" aria-haspopup="dialog" aria-label="Open Films">
+              <div class="visual films"><div class="film-frame" aria-hidden="true"><i>✳</i><span>Film<br>diary</span></div><span class="sample-label">Sample illustration</span></div>
+              <div class="entry-meta"><span>05 / The film diary</span><span aria-hidden="true">↗</span></div><h3>Films</h3><p>Reviews and a watchlist.</p>
             </button>
           </article>
           <article class="entry" data-category="writing">
-            <button class="card-open" data-entry="entry-writing" aria-haspopup="dialog" aria-label="Open A place for words">
-              <div class="visual words" aria-hidden="true"><span class="quote-mark">“</span><span class="quote-text">A place for the words I don’t want to lose.</span><small>A page waiting to be filled</small></div>
-              <div class="entry-meta"><span>06 / Writings &amp; collected words</span><span aria-hidden="true">↗</span></div><h3>A place for words</h3><p>Little essays, passing thoughts, and lines I keep.</p>
+            <button class="card-open" data-entry="entry-writing" aria-haspopup="dialog" aria-label="Open Writing">
+              <div class="visual words" aria-hidden="true"><span class="quote-mark">“</span><span class="quote-text">Notes &amp;<br>quotes</span><small>Writing</small></div>
+              <div class="entry-meta"><span>06 / Writings &amp; collected words</span><span aria-hidden="true">↗</span></div><h3>Writing</h3><p>My writing and collected quotes.</p>
             </button>
           </article>
         </div>
       </section>
     </div>
     <section class="about" id="about" aria-labelledby="about-title"><div class="wrap about-inner">
-      <div><span class="about-flower" aria-hidden="true">✳</span><span class="eyebrow">The person behind the pages</span><h2 id="about-title">Hi, I’m Zara.<br><em>Welcome to my world.</em></h2></div>
-      <div><p>I wanted a little corner of the internet that feels like me. Somewhere for my sketches and paintings, my yoga practice, and photographs of nature and Armenian heritage.</p><p>And for the less tangible things, too: a book that stays with me, a film I want to talk about, or a few words worth keeping. This collection is a work in progress. So am I.</p><p class="signature">Make yourself at home. ♡</p></div>
+      <div><span class="about-flower" aria-hidden="true">✳</span><span class="eyebrow">About</span><h2 id="about-title">I’m Zara.</h2></div>
+      <div><p>I paint, sketch, practice yoga, and take photographs of nature and Armenian heritage.</p><p>This site is where I share that work, my writing, and my opinions on books and films.</p></div>
     </div></section>
   </main>
-  <footer class="wrap"><span class="footer-note">A small corner. A whole world.</span><span>Made with care &amp; a little curiosity.</span><a href="#">Back to the top ↑</a></footer>
+  <footer class="wrap"><span class="footer-note">Zara</span><a href="editor.html">Editor</a><a href="#">Back to the top ↑</a></footer>
 
   <!-- Full entries: replace this starter copy with your own. -->
-  <template id="entry-art"><h2>From the sketchbook</h2><p>A home for sketches, paintings, and experiments in progress.</p><p>My first artwork will go here, with its title, materials, and a little of the story behind it.</p></template>
-  <template id="entry-yoga"><h2>Room to breathe</h2><p>A collection of moments from my yoga practice, in photographs, videos, and reflections.</p><p>The first practice entry is still to come.</p></template>
-  <template id="entry-photography"><h2>The things I notice</h2><p>Photographs of nature and Armenian heritage will live here, along with the places and stories behind them.</p><p>The image on the collection card is a sample illustration. My photographs are still to come.</p></template>
-  <template id="entry-books"><h2>Between the pages</h2><p>A personal reading journal: what I’ve read, what I thought, and what stayed with me.</p><p>The first entry will include a book’s title and author, followed by my own review.</p></template>
-  <template id="entry-films"><h2>After the credits</h2><p>A space for film reviews, memorable scenes, and the ever-growing watchlist.</p><p data-letterboxd-pending>My Letterboxd link is coming soon. The first film entry is still to come.</p><a class="text-link" data-letterboxd-link hidden>Find me on Letterboxd <span aria-hidden="true">↗</span></a></template>
-  <template id="entry-writing"><h2>A place for words</h2><p>Original writing and a collection of interesting quotes, with credit to the people who wrote them.</p><p>The first page is still waiting to be filled.</p></template>
-  <dialog id="entry-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Close entry">×</button><div class="draft-tag">A little preview · starter entry</div><div id="dialog-content"></div></dialog>
+  <template id="entry-art"><h2>Art &amp; sketches</h2><p>No artwork added yet.</p></template>
+  <template id="entry-yoga"><h2>Yoga</h2><p>No photos or videos added yet.</p></template>
+  <template id="entry-photography"><h2>Photography</h2><p>No photographs added yet. The card shows a sample illustration.</p></template>
+  <template id="entry-books"><h2>Books</h2><p>No book reviews added yet.</p></template>
+  <template id="entry-films"><h2>Films</h2><p>No film reviews added yet.</p><p data-letterboxd-pending>Letterboxd profile not linked yet.</p><a class="text-link" data-letterboxd-link hidden>My Letterboxd profile <span aria-hidden="true">↗</span></a></template>
+  <template id="entry-writing"><h2>Writing</h2><p>No writing or quotes added yet.</p></template>
+  <dialog id="entry-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Close entry">×</button><div class="draft-tag">Placeholder entry</div><div id="dialog-content"></div></dialog>
+  <script src="content/posts.js"></script>
+  <script src="assets/posts.js"></script>
+  <script src="assets/collection.js"></script>
   <script>
-    // Add your Letterboxd username here to enable your profile link.
-    const LETTERBOXD_USERNAME = '';
+    const LETTERBOXD_USERNAME = 'zartuyt';
 
     const paletteToggle = document.querySelector('#palette-toggle');
     const themeColor = document.querySelector('meta[name="theme-color"]');
